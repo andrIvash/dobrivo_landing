@@ -1,0 +1,132 @@
+//_main_menu.scss
+
+/* main menu _____________________________________________________________________*/
+.mainmenu__container {
+  position:absolute;
+  left:0px;
+  top:120px;
+  
+   
+}
+
+.mainmenu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #fafafa;
+  box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75);
+    
+}
+.mainmenu__item {
+    display: inline-block;
+    position: relative;
+    margin-right: 25px; 
+    
+}
+
+
+.mainmenu__link {
+    color: #6D6E71;
+    font-family: $roboto-cond;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    text-decoration: none; 
+    position: relative;
+    padding:17px 25px;
+   
+}
+.mainmenu__link:after {
+    content: "";
+    display: block;
+    position:absolute;
+    top: 13px;
+    right: 0px;
+    width:20px;
+    height:20px;
+    background-image: url('../img/arrowright.png');
+    background-repeat: no-repeat;
+    background-position: 5px 7px;
+}
+
+.mainmenu__link:hover:after {
+    display: none;
+}
+
+.mainmenu__item.cave{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#54a427+0,735f1f+100 */
+background: rgb(84,164,39); /* Old browsers */
+background: -moz-linear-gradient(top,  rgb(84,164,39) 0%, rgb(115,95,31) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(84,164,39)), color-stop(100%,rgb(115,95,31))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgb(84,164,39) 0%,rgb(115,95,31) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgb(84,164,39) 0%,rgb(115,95,31) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgb(84,164,39) 0%,rgb(115,95,31) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgb(84,164,39) 0%,rgb(115,95,31) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54a427', endColorstr='#735f1f',GradientType=0 ); /* IE6-9 */
+
+margin-right: -3px;
+} 
+.mainmenu__item.cave .mainmenu__link {
+  padding:17px 72px;
+  color: #fff;
+}
+.mainmenu__item.cave .mainmenu__link:hover {
+  color: #e9e5e4;
+}
+
+.mainmenu__item.cave .mainmenu__link:after {
+  content: "";
+    display: block;
+    position:absolute;
+    top: 13px;
+    left: 22px;
+    width:20px;
+    height:20px;
+    background-image: url('../img/cave.png');
+    background-repeat: no-repeat;
+    background-position: 4px 6px;
+    border:1px solid #fff;
+    border-radius: 50px 50px;
+}
+
+/* dropdown _____________________________________________________________________*/
+.mainmenu-dropdown__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+  position:absolute;
+  top:50px;
+  left:0px;
+  z-index: 9999;
+  
+}
+.mainmenu-dropdown__link {
+  font-family: $roboto-cond;
+  font-size: 15px;
+  color: #A7A9AC;
+  text-decoration: none;
+  display: block;
+  width: 140px;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #dce6f0;
+  padding-top: 6px;
+  padding-left: 19px;
+  padding-bottom: 5px;
+  
+
+}
+.mainmenu-dropdown__link:before  {
+  content: ">";
+  font-family: $roboto-cond;
+  margin-right:5px;
+  display: inline-block;
+  float:left;
+  height: 30px;
+
+
+}
+.mainmenu-dropdown__link:hover {
+  background-color: #dce6f0;
+}

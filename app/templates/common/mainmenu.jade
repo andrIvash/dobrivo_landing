@@ -1,0 +1,12 @@
+.mainmenu__container
+  ul.mainmenu__list
+    each item, index in ['Нагро-удобрение', 'Биодизель', 'Силко', 'Интернет-магазин', 'Вопросы-Ответы', 'Контакты']
+      li.mainmenu__item
+        a(href='#' class='mainmenu__link' + ((index == 1) ? ' active' : '' ))=item
+        //if index == 0
+        ul.mainmenu-dropdown__list
+          each item in ['Нагро-удобрение', 'Биодизель', 'Силко', 'Интернет-магазин', 'Вопросы-Ответы', 'Контакты']
+            li.mainmenu-dropdown__item
+              a(href="#", class='mainmenu-dropdown__link')= item
+    li.mainmenu__item.cave
+      a(href='#' class='mainmenu__link') Корзина

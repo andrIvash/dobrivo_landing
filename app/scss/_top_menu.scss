@@ -1,0 +1,39 @@
+//_top_menu.scss
+
+/* top menu _____________________________________________________________________*/
+.topmenu__container {
+  position:absolute;
+  left:495px;
+  top:63px;
+   
+}
+
+.topmenu__list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+}
+.topmenu__item {
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    
+}
+
+
+.topmenu__link {
+    color: #FFF;
+    font-family: $roboto;
+    font-size: 11px;
+    font-weight: 300;
+    text-transform: uppercase;
+    display: block;
+    text-decoration: none;
+    position: relative;
+    padding: 10px 12px 3px 12px;  
+    
+}
+.topmenu__link:hover {
+  border-bottom: 1px solid #fff;
+  
+}

@@ -1,0 +1,5 @@
+.topmenu__container
+  ul.topmenu__list
+    each item, index in ['Оплата и доставка', 'Новости', 'Справочник', 'Сертификаты']
+      li.topmenu__item
+        a(href='#' class='topmenu__link' + ((index == 1) ? ' active' : '' ))=item

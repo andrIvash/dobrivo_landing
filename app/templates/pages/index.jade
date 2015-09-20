@@ -1,0 +1,33 @@
+extends ../layouts/main_layout.jade
+include ../common/mixin.jade
+
+block title
+  title test project
+
+block content
+  include ../common/header.jade
+  .main-content
+    section.section
+      include ../common/orderform.jade 
+      .section__title
+        span.section__title_text.line1 Органическое
+        span.section__title_text.line2 нано-удобрение
+        span.section__title_text.line3  добриво
+      .sideblock-left
+        ul.plus__list
+          li.plus__item Прирост урожая
+            .plus__item_text в сравнении с химиеческим удорением
+            .plus__item_percent 30%-250%
+          li.plus__item Экономия
+            .plus__item_text химических удобрений  хозяйстве
+            .plus__item_percent до 70%
+          li.plus__item Рост корневой
+            .plus__item_text Системы растений при использовании
+            .plus__item_percent в 3-10 раз
+        .more-info
+          .more-info__title 
+            p Узнайте
+            p о нагро больше !
+          button.more-info__button Узнать больше
+      .sideblock-right
+

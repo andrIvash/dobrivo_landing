@@ -1,0 +1,156 @@
+//_orderform.scss
+
+input {
+	outline: none;
+}
+
+.order__wrapper {
+  width: 300px;
+  position: absolute;
+  top: -110px;
+  right: 120px;
+  padding: 20px;
+  background: #e9e5e4;
+}
+.order {
+  border: 1px dashed #a7a9ac;
+  background: #f2f2f0;
+  padding: 20px;
+}
+
+.order__header {
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 20px;
+  &_title {
+    font-family: $roboto-cond;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &_text {
+    color: #25383F;
+    font-family: $roboto;
+    font-size: 14px; 
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+  &_text-bold {
+    font-weight: 500;
+  }
+}
+
+.orderform {
+	
+}
+
+.orderform__group {
+	margin-bottom: 12px;
+  position: relative;
+}
+
+.orderform__input {
+  box-sizing: border-box;
+  font-size: 12px;
+  width: 100%;
+  padding: 12px 12px; 
+	display: block;	
+	height: 22px;
+	color: #a7a9ac;
+	background-color: #fefefe;
+	border: 1px solid #d1d3d4;
+	border-radius: 1px;
+	outline: none;
+}
+
+.corn__selected {
+  background: #fefefe url('../img/arrowdown1.png') 234px 9px no-repeat;
+  width: 100%;
+  box-sizing: border-box;
+  color: #A7A9AC;
+  font-family: $roboto;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 3px 12px; 
+  height: 26px;
+  color: #a7a9ac;
+  border: 1px solid #d1d3d4;
+  border-radius: 1px;
+  outline: none;
+  cursor: pointer;
+  
+}
+
+.corn__list { 
+  font-family: $roboto;
+  font-size: 12px;
+  font-weight: 400;
+  background: #fff;
+  color: #A7A9AC;
+  margin:0; 
+  padding: 3px 12px; 
+  list-style: none;
+  border: 1px solid #dae1eb;
+  border-top: none;
+  display: none;
+  position:absolute;
+  top:44px;
+  left:0px;
+  width:232px;
+  z-index: 9999;
+
+}
+.corn__item {
+  display: block;
+  height: 24px;
+  cursor: pointer;
+  padding-left:5px;
+  padding-top: 4px;
+  margin-bottom: 0px;
+  cursor: pointer;
+}
+.corn__item:hover {
+  color:#dae1eb;
+}
+
+.order__footer {
+  text-align: center;
+  overflow: hidden;
+  &_text {
+    color: #D26441;
+    font-family: $roboto;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  &_price {
+    color: #D26441;
+    font-family: $roboto-cond;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &_curr {
+    color: #25383F;
+    font-family: $roboto;
+    font-size: 14px;
+    font-weight: 300;
+
+  }
+}
+
+
+
+
+
+
+/* _____________ тултипы _________ */
+.qtip-mystyle{
+  background-color: #D26441;
+  border-color: #f97e76;
+  font-family: 'fira_sansbook';
+  color: #ffffff;
+  font-size: 13px;
+}
+
+

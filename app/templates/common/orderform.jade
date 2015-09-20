@@ -1,0 +1,27 @@
+.order__wrapper
+  .order
+    .order__header
+      .order__header_title Посчитайте прибыль
+      .order__header_text <span class="order__header_text-bold">Добриво</span> эффективнее химии
+    .order__body
+      form.orderform#add-order(role="form")
+        .orderform__group
+          .corn__title Выберите культуру
+          .corn__selected(data-price="3100") Пшеница 3100 грн/т
+          ul.corn__list
+            li.corn__item(data-price="2100") Овес 2100 грн/т
+            li.corn__item(data-price="1100") Кукуруза 1100 грн/т
+            li.corn__item(data-price="3100") Пшеница 3100 грн/т
+        .orderform__group
+          label.orderform__label(for="harv") Урожайность, ц/га
+          input.orderform__input#harv(name="harv", type="text", placeholder="0",  qtip-position="left", qtip-content="введите число")
+        .orderform__group
+          label.orderform__label(for="fert") Стоимость хим. удобрения, грн/га
+          input.orderform__input#fert(name="fert", type="text", placeholder="0", qtip-position="left", qtip-content="введите число")
+        .orderform__group
+          label.orderform__label(for="area") Посевная площадь,га
+          input.orderform__input#area(name="area", type="text", placeholder="0", qtip-position="left", qtip-content="введите число")
+    .order__footer
+      .order__footer_text Прибыль от добрива
+      .order__footer_price 50000
+      .order__footer_curr грн

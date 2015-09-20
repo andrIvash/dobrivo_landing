@@ -1,0 +1,28 @@
+//_slider.scss
+.slider {
+		
+}
+
+.slider__list-wrap {
+	   width: 1349px;
+	   height: 328px;
+	   margin: 0 auto;
+	   overflow: hidden; 
+	   
+}
+
+.slider__list {
+	@extend .clearfix;
+	width: 10000px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+	@include transition(left .3s ease);
+	left:0;
+	.slider__item {
+		float: left;
+		
+
+	}
+}  
