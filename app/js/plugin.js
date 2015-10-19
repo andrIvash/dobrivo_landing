@@ -62,7 +62,7 @@ var viewChanger = (function(){
 
         // Переход к следующему слайду
         function _moveSlide() {
-            var container = $('.slider'),
+            var container = $('.slider__list-wrap'),
                 list = container.find('.slider__list'),
                 items = container.find('.slider__item'),
                 firstSlide = items.first(),

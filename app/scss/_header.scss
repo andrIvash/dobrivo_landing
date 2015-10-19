@@ -1,9 +1,10 @@
 //_header.scss
 
 .header__container {
-	// min-width: 1323px;
-  min-width: 1349px; 
-  overflow:hidden;
+	//max-width: 1349px; 
+  //overflow:hidden;
+  //margin: 0 auto;
+
 
 }
 .header {
@@ -14,7 +15,6 @@
   top:0;
   left:0;
   right:0;
-  botom:0;
   margin:auto;
   z-index: 9999;
 }

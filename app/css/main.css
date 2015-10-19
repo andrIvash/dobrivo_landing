@@ -23,10 +23,6 @@ html, body {
 .clearfix:after, .slider__list:after, .section:after {
   clear: both; }
 
-.header__container {
-  min-width: 1349px;
-  overflow: hidden; }
-
 .header {
   width: 1120px;
   height: 330px;
@@ -35,7 +31,6 @@ html, body {
   top: 0;
   left: 0;
   right: 0;
-  botom: 0;
   margin: auto;
   z-index: 9999; }
 
@@ -280,7 +275,9 @@ html, body {
 .section {
   width: 1349px;
   margin: 0 auto;
-  position: relative; }
+  position: relative;
+  background: #fff url("../img/sidebarbg.png") no-repeat center center fixed;
+  background-size: cover; }
 
 .section__title {
   position: absolute;
@@ -310,9 +307,7 @@ html, body {
 
 .sideblock-right {
   width: 719px;
-  min-height: 474px;
-  float: right;
-  background: #fff url("../img/sidebarbg.png") center center no-repeat; }
+  float: right; }
 
 .plus__list {
   margin: 0;
@@ -512,3 +507,6 @@ input {
   font-family: 'fira_sansbook';
   color: #ffffff;
   font-size: 13px; }
+
+.wrapper {
+  min-width: 1349px; }

@@ -119,7 +119,7 @@ gulp.task('useref', function () {
 // Перенос шрифтов
 gulp.task('fonts', function() {
   gulp.src('app/fonts/*')
-    .pipe(filter(['*.eot','*.svg','*.ttf','*.woff','*.woff2']))
+    .pipe(filter(['*.eot','*.svg','*.ttf','*.woff','*.woff2', '*.css']))
     .pipe(gulp.dest('dist/fonts/'))
 });
 

@@ -5,9 +5,11 @@
 	margin: 0 auto;
   position: relative;
  	@extend .clearfix;
+  background: #fff url('../img/sidebarbg.png') no-repeat center center fixed;
+  background-size: cover; 
 }
 .section__title {
-  position: absolute;
+  position: absolute; 
   top: -150px;
   left: 150px;
 
@@ -43,9 +45,9 @@
 }
 .sideblock-right {
   width:719px;
-  min-height: 474px;
+  //min-height: 474px;
   float:right;
-  background: #fff url('../img/sidebarbg.png') center center no-repeat;
+  //background: #fff url('../img/sidebarbg.png') center center no-repeat;
 
 
 }
